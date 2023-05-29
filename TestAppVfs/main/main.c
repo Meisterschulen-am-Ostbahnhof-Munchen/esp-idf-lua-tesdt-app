@@ -70,7 +70,7 @@ void test(void *arg)
 
     luaL_openlibs(L);
 
-    int r = luaL_loadfilex(L, "/lua/main.lua", NULL);
+    int r = luaL_loadfile(L, "/lua/main.lua");
     if (r != LUA_OK)
         printf("Failed to execute /lua/main.lua\n");
     else
