@@ -14,10 +14,20 @@
 
 static void load_custom_libs(lua_State *L)
 {
+#if LUA_VERSION_NUM > 501
     luaL_requiref(L, "gpio", luaopen_lgpio, 1);
+#else
+	lua_pushcfunction(L, luaopen_lgpio);
+	lua_call(L, 0, 0);
+#endif
     lua_pop(L, 1);
 
+#if LUA_VERSION_NUM > 501
     luaL_requiref(L, "rtos", luaopen_lrtos, 1);
+#else
+	lua_pushcfunction(L, luaopen_lrtos);
+	lua_call(L, 0, 0);
+#endif
     lua_pop(L, 1);
 }
 

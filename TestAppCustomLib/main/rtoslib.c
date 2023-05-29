@@ -18,7 +18,10 @@ static const struct luaL_Reg lrtos_funcs[] = {
 
 int luaopen_lrtos(lua_State *L)
 {
+#if LUA_VERSION_NUM > 501
     luaL_newlib(L, lrtos_funcs);
-
+#else
+	luaL_register(L, "rtos", lrtos_funcs);
+#endif
     return 1;
 }

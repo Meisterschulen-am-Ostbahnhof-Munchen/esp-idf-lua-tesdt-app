@@ -54,7 +54,11 @@ static const struct luaL_Reg lgpio_funcs[] = {
 
 int luaopen_lgpio(lua_State *L)
 {
+#if LUA_VERSION_NUM > 501
     luaL_newlib(L, lgpio_funcs);
+#else
+	luaL_register(L, "gpio", lgpio_funcs);
+#endif
 
     return 1;
 }
