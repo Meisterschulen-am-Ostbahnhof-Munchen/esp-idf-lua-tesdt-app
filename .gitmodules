@@ -13,3 +13,6 @@
 [submodule "TestAppVfs/components/esp-idf-lua"]
 	path = TestAppVfs/components/esp-idf-lua
 	url = https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/esp-idf-lua.git
+[submodule "TestAppVfsFileserver/components/esp-idf-lua"]
+	path = TestAppVfsFileserver/components/esp-idf-lua
+	url = https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/esp-idf-lua.git
