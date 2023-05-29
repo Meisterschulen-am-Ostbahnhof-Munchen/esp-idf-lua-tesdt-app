@@ -1,3 +1,15 @@
 [submodule "TestApp/components/esp-idf-lua"]
 	path = TestApp/components/esp-idf-lua
 	url = https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/esp-idf-lua.git
+[submodule "TestAppAlloc/components/esp-idf-lua"]
+	path = TestAppAlloc/components/esp-idf-lua
+	url = https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/esp-idf-lua.git
+[submodule "TestAppCustomLib/components/esp-idf-lua"]
+	path = TestAppCustomLib/components/esp-idf-lua
+	url = https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/esp-idf-lua.git
+[submodule "TestAppSimple/components/esp-idf-lua"]
+	path = TestAppSimple/components/esp-idf-lua
+	url = https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/esp-idf-lua.git
+[submodule "TestAppVfs/components/esp-idf-lua"]
+	path = TestAppVfs/components/esp-idf-lua
+	url = https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/esp-idf-lua.git
